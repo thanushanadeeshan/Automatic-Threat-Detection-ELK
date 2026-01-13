@@ -1,13 +1,75 @@
-# Ignore ELK installations
+############################
+# ELK Stack (Binaries & Heavy Files)
+############################
+
 elk config/kibana-*
 elk config/elasticsearch-*
 elk config/filebeat-*
+elk config/metricbeat-*
 elk config/**/node_modules/
+elk config/**/data/
+elk config/**/logs/
 
-# Ignore system folders
+############################
+# XAMPP (Never upload)
+############################
+
 xampp/
+xampp/**
 
-# Python cache
+############################
+# WordPress
+############################
+
+# Ignore core WordPress files
+wordpress/wp-admin/
+wordpress/wp-includes/
+
+# Ignore sensitive config
+wordpress/wp-config.php
+
+# Ignore uploads (optional – can be large)
+wordpress/wp-content/uploads/
+
+############################
+# Python / ML
+############################
+
 __pycache__/
 *.pyc
+*.pyo
 *.pkl
+*.joblib
+.env
+venv/
+.env/
+
+############################
+# Jupyter / Colab
+############################
+
+.ipynb_checkpoints/
+
+############################
+# OS / Editor junk
+############################
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+############################
+# Logs & Temp
+############################
+
+*.log
+*.tmp
+
+############################
+# Security
+############################
+
+*.key
+*.crt
+*.pem
