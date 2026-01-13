@@ -1,0 +1,94 @@
+/*
+Theme Name: Secure App
+Author: Hunter
+Description: Custom security theme 
+Version: 1.0
+*/
+
+/* 1. RESET & BASICS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1d2939; /* Dark Grey Text */
+    background-color: #fff;
+}
+
+/* 2. THE HERO SECTION (Top Dark Part) */
+.hero {
+    background-color: #101828; /* Deep Navy Blue */
+    background: linear-gradient(180deg, #0a0f1d 0%, #172133 100%);
+    color: white;
+    padding: 80px 20px 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Big Headline */
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cbd5e1; /* Light Grey Text */
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* 3. THE GREEN BUTTON */
+.btn-download {
+    background-color: #00d063; /* The AVG Green */
+    color: white;
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #00a850; /* Darker green on hover */
+}
+
+/* 4. THE FEATURES GRID (White Part) */
+.features {
+    max-width: 1100px;
+    margin: -60px auto 50px auto; /* Overlap the header slightly */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Soft Shadow */
+    border: 1px solid #f1f1f1;
+    text-align: left;
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #101828;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #667085;
+    line-height: 1.5;
+    margin: 0;
+}
